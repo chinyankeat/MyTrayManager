@@ -1,0 +1,19 @@
+<ion-view style="" class=" " id="page17" title= {{category_name}}>
+    <ion-content class="has-header" padding="true" ng-init="loadCategoryAndMenu()">
+
+        <div ng-repeat="item in menu" >
+           
+            <div ng-if="menu[$index].category === current_category" style="padding:1px;border-top:1px solid #999">
+                <a class="item item-icon-right " href="#"  style="border-width: 0px; border-style: none;" >
+                    <p ng-click="addToCart(menu[$index])" style="font-size: 14px;text-align:left;">
+                        {{menu[$index].name}}
+                        <br>
+                        <p ng-click="addToCart(menu[$index])" style="font-size: 10px;text-align:left;">{{menu[$index].description}}</p>
+                    </p>
+                    <i style="font-size: 16px; margin-right:0px;right:0px;"  ng-click="addToCart(menu[$index])" class="icon ion-ios-plus-outline">RM {{menu[$index].price/100}}</i>
+                </a>
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,328 @@
+{
+    "storeControl": {
+        "storeOpenStatus": true
+        , "storeCloseMsg": "Sorry store is closed. Our store's business hours are Monday~Friday, 8:30am~6pm. Please order again later"
+    }
+    , "category": {
+        "cat1": {
+            "name": "Breakfast"
+            , "image": "breakfast"
+        }        
+        , "cat2": {
+            "name": "Pasta"
+            , "image": "pasta"
+        }
+        , "cat3": {
+            "name": "Pizza, Pies & Others"
+            , "image": "pizza_pies"
+        }
+        , "cat4": {
+            "name": "Mdm Lim Kitchen"
+            , "image": "mdm_lim_kitchen"
+        }
+        , "cat5": {
+            "name": "Beverages"
+            , "image": "beverages"
+        }
+        , "cat6": {
+            "name": "Cakes"
+            , "image": "cakes"
+        }
+    }
+    , "featured": {
+        "item1": "slide_1"
+        , "item2": "slide_2"
+    }
+    , "menu": {
+        "item1": {
+            "available": true
+            , "category": "cat1"
+            , "name": "Rice Roll Noodle / Chee Cheong Fun"
+            , "description": "Freshly made Chee Cheong Fun with sauce, chili sauce & sesame seed"
+            , "price": 300
+            , "subcategory": false
+        }
+        , "item2": {
+            "available": true
+            , "category": "cat1"
+            , "name": "Grab & Go Sandwich"
+            , "description": "Wholemeal bread sandwich Egg / Tuna Mayo / Chicken Ham & Cheese"
+            , "price": 500
+            , "subcategory" : true
+        }
+        , "item3": {
+            "available": true
+            , "category": "cat1"
+            , "name": "Zero 16"
+            , "description": "2 eggs, sausage, baked beans, mushroom & toast and butter"
+            , "price": 800
+            , "subcategory": false
+        }
+        , "item4": {
+            "available": true
+            , "category": "cat1"
+            , "name": "Croissant & Coffee"
+            , "description": "Freshly baked croissant with jam. Comes with Americano / Latte / Tea"
+            , "price": 800
+            , "subcategory" : true
+        }
+        , "item5": {
+            "available": true
+            , "category": "cat1"
+            , "name": "Muffin & Coffee"
+            , "description": "Freshly baked jumbo muffin. Comes with Americano / Latte / Tea"
+            , "price": 800
+            , "subcategory" : true
+        }
+        , "item6": {
+            "available": true
+            , "category": "cat1"
+            , "name": "Jumbo Croissant"
+            , "description": "Jumbo Croissant with Portion Jam"
+            , "price": 600
+            , "subcategory": false
+        }
+        , "item7": {
+            "available": true
+            , "category": "cat1"
+            , "name": "Jumbo Muffins"
+            , "description": "Chocolate / Blueberry / Banana Oat"
+            , "price": 600
+            , "subcategory" : true
+        }
+        , "item8": {
+            "available": true
+            , "category": "cat1"
+            , "name": "Sweet Waffles"
+            , "description": "with Jam & Butter"
+            , "price": 600
+            , "subcategory" : true
+        }
+        , "item9": {
+            "available": true
+            , "category": "cat2"
+            , "name": "Vegetarian - Classic Aglio Olio (v)spicy"
+            , "description": "Sauteed garlic, mushrooms, cherry tomatoes & chili"
+            , "price": 900
+            , "subcategory": false
+        }
+        , "item10": {
+            "available": true
+            , "category": "cat2"
+            , "name": "Vegetarian - Classic Presto"
+            , "description": "Homemade pesto (basil, arugula, nuts & parmesan)"
+            , "price": 900
+            , "subcategory": false
+        }
+        , "item11": {
+            "available": true
+            , "category": "cat2"
+            , "name": "Special Pasta - Chicken Bolognese"
+            , "description": "Slow cooked lean minced chicken with tomato stey & herbs"
+            , "price": 1000
+            , "subcategory": false
+        }
+        , "item12": {
+            "available": true
+            , "category": "cat3"
+            , "name": "Margherita (10in thin crust pizza)"
+            , "description": "tomato, basil & pesto with lots of cheese"
+            , "price": 1300
+            , "subcategory": false
+        }
+        , "item13": {
+            "available": true
+            , "category": "cat4"
+            , "name": "Black pepper chicken"
+            , "description": "Black pepper sauce on chicken. Served with salad & brown rice"
+            , "price": 1000
+            , "subcategory": false
+        }
+        , "item14": {
+            "available": true
+            , "category": "cat4"
+            , "name": "Thai Style Chicken"
+            , "description": "Thai chili sauce on chicken. Served with saled & brown rice"
+            , "price": 1000
+            , "subcategory": false
+        }
+        , "item15": {
+            "available": true
+            , "category": "cat4"
+            , "name": "Sweet & Sour Chicken"
+            , "description": "Home made teriyaki sauce with roasted boneless chicken & toasted sesame. Served with pickled cucumber & brown rice"
+            , "price": 1000
+            , "subcategory": false
+        }
+        , "item16": {
+            "available": true
+            , "category": "cat5"
+            , "name": "Coffee: Americano"
+            , "description": "Hot / Cold"
+            , "price": 500
+            , "subcategory": true
+        }
+        , "item17": {
+            "available": true
+            , "category": "cat5"
+            , "name": "Coffee: Expresso (Hot)"
+            , "description": "Normal / Extra Shot"
+            , "price": 500
+            , "subcategory": true
+        }
+        , "item18": {
+            "available": true
+            , "category": "cat5"
+            , "name": "Coffee: Affogato"
+            , "description": "Cold"
+            , "price": 500
+            , "subcategory": false
+        }
+        
+
+        , "item1001": {
+            "available": true
+            , "category": "item2_subcategory"
+            , "name": "Egg Mayo Sandwich"
+            , "description": ""
+            , "price": 500
+            , "subcategory": false
+        }
+        , "item1002": {
+            "available": true
+            , "category": "item2_subcategory"
+            , "name": "Tuna Mayo Sandwich"
+            , "description": ""
+            , "price": 500
+            , "subcategory": false
+        }
+        , "item1003": {
+            "available": true
+            , "category": "item2_subcategory"
+            , "name": "Chicken Ham & Cheese Sandwich"
+            , "description": ""
+            , "price": 600
+            , "subcategory": false
+        }
+        , "item1004": {
+            "available": true
+            , "category": "item4_subcategory"
+            , "name": "Croissant & Americano"
+            , "description": ""
+            , "price": 800
+            , "subcategory": false
+        }
+        , "item1005": {
+            "available": true
+            , "category": "item4_subcategory"
+            , "name": "Croissant & Latte"
+            , "description": ""
+            , "price": 800
+            , "subcategory": false
+        }
+        , "item1006": {
+            "available": true
+            , "category": "item4_subcategory"
+            , "name": "Croissant & Tea"
+            , "description": ""
+            , "price": 800
+            , "subcategory": false
+        }
+        , "item1007": {
+            "available": true
+            , "category": "item5_subcategory"
+            , "name": "Muffin & Americano"
+            , "description": ""
+            , "price": 800
+            , "subcategory": false
+        }
+        , "item1008": {
+            "available": true
+            , "category": "item5_subcategory"
+            , "name": "Muffin & Latte"
+            , "description": ""
+            , "price": 800
+            , "subcategory": false
+        }
+        , "item1009": {
+            "available": true
+            , "category": "item5_subcategory"
+            , "name": "Muffin & Tea"
+            , "description": ""
+            , "price": 800
+            , "subcategory": false
+        }
+        , "item1010": {
+            "available": true
+            , "category": "item7_subcategory"
+            , "name": "Chocolate Jumbo Muffins"
+            , "description": ""
+            , "price": 600
+            , "subcategory": false
+        }
+        , "item1011": {
+            "available": true
+            , "category": "item7_subcategory"
+            , "name": "Blueberry Jumbo Muffins"
+            , "description": ""
+            , "price": 600
+            , "subcategory": false
+        }
+        , "item1012": {
+            "available": true
+            , "category": "item7_subcategory"
+            , "name": "Banana Oat Jumbo Muffins"
+            , "description": ""
+            , "price": 600
+            , "subcategory": false
+        }
+        , "item1013": {
+            "available": true
+            , "category": "item8_subcategory"
+            , "name": "Sweet Waffles"
+            , "description": ""
+            , "price": 600
+            , "subcategory": false
+        }
+        , "item1014": {
+            "available": true
+            , "category": "item8_subcategory"
+            , "name": "Sweet Waffles + Ice Cream"
+            , "description": ""
+            , "price": 800
+            , "subcategory": false
+        }
+        , "item1015": {
+            "available": true
+            , "category": "item16_subcategory"
+            , "name": "Americano (HOT)"
+            , "description": ""
+            , "price": 500
+            , "subcategory": false
+        }
+        , "item1016": {
+            "available": true
+            , "category": "item16_subcategory"
+            , "name": "Americano (COLD)"
+            , "description": ""
+            , "price": 500
+            , "subcategory": false
+        }
+        , "item1017": {
+            "available": true
+            , "category": "item17_subcategory"
+            , "name": "Expresso (HOT)"
+            , "description": ""
+            , "price": 500
+            , "subcategory": false
+        }
+        , "item1018": {
+            "available": true
+            , "category": "item17_subcategory"
+            , "name": "Expresso (HOT) Extra Shot"
+            , "description": ""
+            , "price": 700
+            , "subcategory": false
+        }
+    }
+}
