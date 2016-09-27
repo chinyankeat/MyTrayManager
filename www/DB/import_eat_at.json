@@ -1,7 +1,8 @@
 {
     "storeControl": {
         "storeOpenStatus": true
-        , "storeCloseMsg": "Sorry store is closed. Our store's business hours are Monday~Friday, 8:30am~6pm. Please order again later"
+        , "storeClosedMessage": "Our cafe's opening hour are from 8am-6pm, Monday to Friday except public holidays. Please order again during our opening hours."
+        , "storeClosedTitle": "Sorry we are Closed."
     }
     , "category": {
         "cat1": {
@@ -34,7 +35,7 @@
         , "item2": "slide_2"
     }
     , "menu": {
-        "item1": {
+        "1000001": {
             "available": true
             , "category": "cat1"
             , "name": "Rice Roll Noodle / Chee Cheong Fun"
@@ -42,7 +43,7 @@
             , "price": 300
             , "subcategory": false
         }
-        , "item2": {
+        , "1000002": {
             "available": true
             , "category": "cat1"
             , "name": "Grab & Go Sandwich"
@@ -50,7 +51,7 @@
             , "price": 500
             , "subcategory" : true
         }
-        , "item3": {
+        , "1000003": {
             "available": true
             , "category": "cat1"
             , "name": "Zero 16"
@@ -58,7 +59,7 @@
             , "price": 800
             , "subcategory": false
         }
-        , "item4": {
+        , "1000004": {
             "available": true
             , "category": "cat1"
             , "name": "Croissant & Coffee"
@@ -66,7 +67,7 @@
             , "price": 800
             , "subcategory" : true
         }
-        , "item5": {
+        , "1000005": {
             "available": true
             , "category": "cat1"
             , "name": "Muffin & Coffee"
@@ -74,7 +75,7 @@
             , "price": 800
             , "subcategory" : true
         }
-        , "item6": {
+        , "1000006": {
             "available": true
             , "category": "cat1"
             , "name": "Jumbo Croissant"
@@ -82,7 +83,7 @@
             , "price": 600
             , "subcategory": false
         }
-        , "item7": {
+        , "1000007": {
             "available": true
             , "category": "cat1"
             , "name": "Jumbo Muffins"
@@ -90,7 +91,7 @@
             , "price": 600
             , "subcategory" : true
         }
-        , "item8": {
+        , "1000008": {
             "available": true
             , "category": "cat1"
             , "name": "Sweet Waffles"
@@ -98,7 +99,7 @@
             , "price": 600
             , "subcategory" : true
         }
-        , "item9": {
+        , "1000009": {
             "available": true
             , "category": "cat2"
             , "name": "Vegetarian - Classic Aglio Olio (v)spicy"
@@ -106,7 +107,7 @@
             , "price": 900
             , "subcategory": false
         }
-        , "item10": {
+        , "1000010": {
             "available": true
             , "category": "cat2"
             , "name": "Vegetarian - Classic Presto"
@@ -114,7 +115,7 @@
             , "price": 900
             , "subcategory": false
         }
-        , "item11": {
+        , "1000011": {
             "available": true
             , "category": "cat2"
             , "name": "Special Pasta - Chicken Bolognese"
@@ -122,7 +123,7 @@
             , "price": 1000
             , "subcategory": false
         }
-        , "item12": {
+        , "1000012": {
             "available": true
             , "category": "cat3"
             , "name": "Margherita (10in thin crust pizza)"
@@ -130,7 +131,7 @@
             , "price": 1300
             , "subcategory": false
         }
-        , "item13": {
+        , "1000013": {
             "available": true
             , "category": "cat4"
             , "name": "Black pepper chicken"
@@ -138,7 +139,7 @@
             , "price": 1000
             , "subcategory": false
         }
-        , "item14": {
+        , "1000014": {
             "available": true
             , "category": "cat4"
             , "name": "Thai Style Chicken"
@@ -146,7 +147,7 @@
             , "price": 1000
             , "subcategory": false
         }
-        , "item15": {
+        , "1000015": {
             "available": true
             , "category": "cat4"
             , "name": "Sweet & Sour Chicken"
@@ -154,7 +155,7 @@
             , "price": 1000
             , "subcategory": false
         }
-        , "item16": {
+        , "1000016": {
             "available": true
             , "category": "cat5"
             , "name": "Coffee: Americano"
@@ -162,7 +163,7 @@
             , "price": 500
             , "subcategory": true
         }
-        , "item17": {
+        , "1000017": {
             "available": true
             , "category": "cat5"
             , "name": "Coffee: Expresso (Hot)"
@@ -170,7 +171,7 @@
             , "price": 500
             , "subcategory": true
         }
-        , "item18": {
+        , "1000018": {
             "available": true
             , "category": "cat5"
             , "name": "Coffee: Affogato"
@@ -180,145 +181,145 @@
         }
         
 
-        , "item1001": {
+        , "1000019": {
             "available": true
-            , "category": "item2_subcategory"
+            , "category": "1000002"
             , "name": "Egg Mayo Sandwich"
             , "description": ""
             , "price": 500
             , "subcategory": false
         }
-        , "item1002": {
+        , "1000020": {
             "available": true
-            , "category": "item2_subcategory"
+            , "category": "1000002"
             , "name": "Tuna Mayo Sandwich"
             , "description": ""
             , "price": 500
             , "subcategory": false
         }
-        , "item1003": {
+        , "1000021": {
             "available": true
-            , "category": "item2_subcategory"
+            , "category": "1000002"
             , "name": "Chicken Ham & Cheese Sandwich"
             , "description": ""
             , "price": 600
             , "subcategory": false
         }
-        , "item1004": {
+        , "1000022": {
             "available": true
-            , "category": "item4_subcategory"
+            , "category": "1000004"
             , "name": "Croissant & Americano"
             , "description": ""
             , "price": 800
             , "subcategory": false
         }
-        , "item1005": {
+        , "1000023": {
             "available": true
-            , "category": "item4_subcategory"
+            , "category": "1000004"
             , "name": "Croissant & Latte"
             , "description": ""
             , "price": 800
             , "subcategory": false
         }
-        , "item1006": {
+        , "1000024": {
             "available": true
-            , "category": "item4_subcategory"
+            , "category": "1000004"
             , "name": "Croissant & Tea"
             , "description": ""
             , "price": 800
             , "subcategory": false
         }
-        , "item1007": {
+        , "1000025": {
             "available": true
-            , "category": "item5_subcategory"
+            , "category": "1000005"
             , "name": "Muffin & Americano"
             , "description": ""
             , "price": 800
             , "subcategory": false
         }
-        , "item1008": {
+        , "1000026": {
             "available": true
-            , "category": "item5_subcategory"
+            , "category": "1000005"
             , "name": "Muffin & Latte"
             , "description": ""
             , "price": 800
             , "subcategory": false
         }
-        , "item1009": {
+        , "1000027": {
             "available": true
-            , "category": "item5_subcategory"
+            , "category": "1000005"
             , "name": "Muffin & Tea"
             , "description": ""
             , "price": 800
             , "subcategory": false
         }
-        , "item1010": {
+        , "1000028": {
             "available": true
-            , "category": "item7_subcategory"
+            , "category": "1000007"
             , "name": "Chocolate Jumbo Muffins"
             , "description": ""
             , "price": 600
             , "subcategory": false
         }
-        , "item1011": {
+        , "1000029": {
             "available": true
-            , "category": "item7_subcategory"
+            , "category": "1000007"
             , "name": "Blueberry Jumbo Muffins"
             , "description": ""
             , "price": 600
             , "subcategory": false
         }
-        , "item1012": {
+        , "1000030": {
             "available": true
-            , "category": "item7_subcategory"
+            , "category": "1000007"
             , "name": "Banana Oat Jumbo Muffins"
             , "description": ""
             , "price": 600
             , "subcategory": false
         }
-        , "item1013": {
+        , "1000031": {
             "available": true
-            , "category": "item8_subcategory"
+            , "category": "1000008"
             , "name": "Sweet Waffles"
             , "description": ""
             , "price": 600
             , "subcategory": false
         }
-        , "item1014": {
+        , "1000032": {
             "available": true
-            , "category": "item8_subcategory"
+            , "category": "1000008"
             , "name": "Sweet Waffles + Ice Cream"
             , "description": ""
             , "price": 800
             , "subcategory": false
         }
-        , "item1015": {
+        , "1000033": {
             "available": true
-            , "category": "item16_subcategory"
+            , "category": "1000016"
             , "name": "Americano (HOT)"
             , "description": ""
             , "price": 500
             , "subcategory": false
         }
-        , "item1016": {
+        , "1000034": {
             "available": true
-            , "category": "item16_subcategory"
+            , "category": "1000016"
             , "name": "Americano (COLD)"
             , "description": ""
             , "price": 500
             , "subcategory": false
         }
-        , "item1017": {
+        , "1000035": {
             "available": true
-            , "category": "item17_subcategory"
+            , "category": "1000017"
             , "name": "Expresso (HOT)"
             , "description": ""
             , "price": 500
             , "subcategory": false
         }
-        , "item1018": {
+        , "1000036": {
             "available": true
-            , "category": "item17_subcategory"
+            , "category": "1000017"
             , "name": "Expresso (HOT) Extra Shot"
             , "description": ""
             , "price": 700

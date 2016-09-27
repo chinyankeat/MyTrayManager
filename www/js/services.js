@@ -13,7 +13,7 @@ angular.module('app.services', []).factory('fireBaseData', function ($firebase) 
         , refCategory = new Firebase("https://eatat-d0089.firebaseio.com/category")
         , refMenu = new Firebase("https://eatat-d0089.firebaseio.com/menu")
         , refStoreControl = new Firebase("https://eatat-d0089.firebaseio.com/storeControl")
-        , refOrder = new Firebase("https://eatat-d0089.firebaseio.com/orders")
+        , refOrders = new Firebase("https://eatat-d0089.firebaseio.com/orders")
     
     // what scope we want to add in, so that we request these from FB Profile
     refFbProvider.addScope('user_birthday');
@@ -31,8 +31,8 @@ angular.module('app.services', []).factory('fireBaseData', function ($firebase) 
         , refCart: function () {
             return refCart;
         }
-        , refOrder: function () {
-            return refOrder;
+        , refOrders: function () {
+            return refOrders;
         }
         , refFeatured: function () {
             return refFeatured;

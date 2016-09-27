@@ -1,22 +1,26 @@
-<ion-view style="" class=" " id="page7" title="Manage Order" ng-init="initManageOrder()">
+<ion-view style="" class=" " id="page7" title="Manage Order">
     <ion-content class="has-header" padding="false">
        
     <div style="padding:15px; text-align:center">
         Store is now {{storeStatusText}}<br>
         <a style="min-width: 100%;border-radius: 0px;" ng-click="goToSettings()"  class="button button-lite">Open / Close Store</a>
-    </div>         
+    </div>
 
-    <div class="row" ng-repeat="order in Orders" style="border-top: 1px solid #999;" ng-click="goToOrder(Orders[$index])" >
+    <div ng-if="Orders.length === 0" style="padding:15px; text-align:center; border-top: 1px solid #999;">
+        You have no orders
+    </div>
+
+    <div class="row" ng-repeat="order in Orders" style="border-top: 1px solid #999;" ng-click="goToOrder($index)" >
         <a class="item item-icon-right " href="#"  style="border-width: 0px; border-style: none;" >
-            <p style="font-size: 14px;text-align:left;">
-                {{Orders[$index].name}} <br>
-                <p style="font-size: 8px;text-align:left;">{{Orders[$index].date}}</p>
+            <p style="font-size: 12px;text-align:left;">
+                {{Orders[$index].name}}  <br>
+                {{Orders[$index].timeDateString}} <br>
             </p>
             <div ng-if="Orders[$index].orderStatus === 'pending'">
-                <i style="font-size: 20px; margin-right:0px;right:0px;" class="icon ion-android-more-horizontal"></i>
+                <i style="font-size: 20px; margin-right:0px;right:0px;" class="icon ion-android-clipboard"></i>
             </div>
             <div ng-if="Orders[$index].orderStatus === 'processing'">
-                <i style="font-size: 20px; margin-right:0px;right:0px;" class="icon ion-android-checkbox-outline-blank"></i>
+                <i style="font-size: 20px; margin-right:0px;right:0px;" class="icon ion-android-time"></i>
             </div>
             <div ng-if="Orders[$index].orderStatus === 'ready'">
                 <i style="font-size: 20px; margin-right:0px;right:0px;" class="icon ion-android-checkbox-outline"></i>

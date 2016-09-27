@@ -1,4 +1,4 @@
-<ion-view style="" class=" " id="page12" title="Settings">
+<ion-view style="" class=" " id="page13" title="Settings">
     <ion-content class="has-header" padding="false" ng-init="initSettings()">
 
       <form name="settingForm" class="list " id="settings-form">
@@ -19,61 +19,26 @@
             <a style="min-width: 100%;border-radius: 0px;" ng-click="toggleStore()"  class="button button-lite">{{storeButtonText}}</a>
         </div>         
                            
-        <label class="item item-input ic-selected">
-            <a class="icon icon-right ion-android-call" style="margin-right: 10px;"></a>
-            <input style="color: #000;" ng-model="user_extras.telephone" type="text" placeholder="Telephone"> 
-        </label>
-
-        <label class="item item-input ic-selected">
-            <a class="icon icon-right ion-email" style="margin-right: 10px;"></a>
-            <input style="color: #000;" ng-model="data_editable.email" type="email" placeholder="Email"> 
-        </label>
-
-        <label class="item item-input ic-selected">
-            <a class="icon icon-right ion-locked" style="margin-right: 10px;"></a>
-            <input style="color: #000;" ng-model="data_editable.password" type="password" placeholder="Update Password"> 
-        </label>
-
-
-          <!--Address Header-->
-          <label ng-click="addManipulation()" class="item item-input  item ic-selected" >
-            <a class="icon icon-right ion-ios-location" style="margin-right: 10px;" ></a>
-            Address
-            <i  class="icon icon-right ion-android-add-circle" style="font-size: larger ;margin-left: 10px;"></i>
-          </label>
-
-
-        <div ng-repeat="item in addresses"   >
-          <div class="list card" >
-            <div style="min-height: 30px;" class="item item-divider">
-                <a class="icon icon-right ion-ios-location"></a>
-                {{item.nickname}}
-                <div style="float: right;">
-                  <a ng-click="addManipulation(item)" class="icon icon-right ion-edit" style="font-size: 20px;"></a>
-                  <a ng-click="deleteAddress(item.$id)" class="icon icon-right ion-android-delete" style="font-size: 20px;"></a>
-                </div>
-            </div>
-            <div class="item item-body" >
-
-              <span> {{item.address}} </span>
-              <span>Pin: {{item.pin}}</span>
-              <span>Tel: {{item.phone}}</span>
-
-            </div>
-          </div>
+        <div style="padding:15px">
+            Store Closed Title
+            <label class="item item-input ic-selected">
+                <a class="icon icon-right ion-reply" style="margin-right: 12px;"></a>
+                <input style="color: 0000;" ng-model="user_extras.storeClosedTitle" type="text" placeholder={{storeClosedTitle}}> 
+            </label>
+        </div>
+        <br>
+        
+        <div style="padding:15px">
+            Store Closed Message
+            <label class="item item-input ic-selected">
+                <a class="icon icon-right ion-calendar" style="margin-right: 10px;"></a>
+                <input style="color: 0000;" ng-model="user_extras.storeClosedMessage" type="text" placeholder={{storeClosedMessage}}> 
+            </label>
         </div>
 
-
-
-
         </ion-list>
-
       </form>
-
     </ion-content>
-
-
-
 
 
 

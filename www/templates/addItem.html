@@ -1,0 +1,55 @@
+<ion-view style="" class=" " id="page12" title= "Add Menu New Item">
+    <ion-content class="has-header" padding="false">
+
+        <form name="editItemForm" class="list " id="edit-item-form">
+
+            <!-- Edit the category - TODO: change to dynamic -->
+            <div style="padding:1px;border-top:1px solid #999" class = "list" >
+                <label class = "item item-input item-select">
+                    <div class = "input-label">Category</div>
+                    <select ng-model=item_info.category>
+                        <option ng-repeat="cat in categories" value="{{cat.$id}}">
+                            {{cat.name}}
+                        </option>
+                        <option ng-repeat="item in allMenuItem" ng-if="item.subcategory===true" value="{{item.$id}}">
+                            {{item.name}}
+                        </option>
+                        
+                    </select>
+                </label>
+            </div>
+
+            <!-- Edit Name of the item -->                                                                                 
+            <div style="padding:15px;border-top:1px solid #999">
+                Name
+                <label class="item item-input ic-selected">
+                    <input style="color: 0000;" ng-model="item_info.nameOfItem" type="text" placeholder="Item's Name"> 
+                </label>
+            </div>
+
+            <div style="padding:15px;border-top:1px solid #999">
+                Description
+                <label class="item item-input ic-selected">
+                    <input style="color: 0000;" ng-model="item_info.description" type="text" placeholder="Item's Description"> 
+                </label>
+            </div>
+
+            <div style="padding:15px;border-top:1px solid #999">
+                Price (RM)
+                <label class="item item-input ic-selected">
+                    <input style="color: 0000;" ng-model="item_info.price" type="number" placeholder=0> 
+                </label>
+            </div>
+                        
+        </form>
+    </ion-content>
+
+
+    <!-- <ion-footer-bar  class="bar button-bar-footer" style="height: auto;">   -->
+    <div id="footer" class="button-bar"  >
+      <a style="min-width: 50%;border-radius: 0px;" ng-click="cancel()" class="button button-lite icon-left ion-close">Cancel</a>
+      <a style="min-width: 50%;border-radius: 0px;" ng-click="save(item_info)"  class="button button-assertive icon-left ion-checkmark">Save</a>
+    </div>
+  <!-- </ion-footer-bar>  -->
+
+</ion-view>

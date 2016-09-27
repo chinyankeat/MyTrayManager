@@ -1,0 +1,44 @@
+<ion-view style="" class=" " id="page8" title="Order Details">
+    <ion-content class="has-header" padding="false">
+       
+    <div style="padding:15px; text-align:left">
+        Order from {{orderDetail.name}}<br>
+        Date {{orderDetail.timeDateString}}<br>
+        Status {{orderDetail.orderStatus}}<br>
+    </div>         
+    <div style="padding:15px; text-align:center">
+        <div ng-if="orderDetail.orderStatus === 'pending'">
+            <a style="min-width: 40%;border-radius: 0px;" ng-click="orderProcessing()"  class="button button-lite">Processing</a>
+            <a style="min-width: 40%;border-radius: 0px;" ng-click="orderReady()"  class="button button-lite">Ready</a>
+        </div>
+        <div ng-if="orderDetail.orderStatus === 'processing'">
+            <a style="min-width: 40%;border-radius: 0px;" ng-click="orderPending()"  class="button button-lite">Pending</a>
+            <a style="min-width: 40%;border-radius: 0px;" ng-click="orderReady()"  class="button button-lite">Ready</a>
+        </div>
+        <div ng-if="orderDetail.orderStatus === 'ready'">
+            <a style="min-width: 40%;border-radius: 0px;" ng-click="orderPending()"  class="button button-lite">Pending</a>
+            <a style="min-width: 40%;border-radius: 0px;" ng-click="orderProcessing()"  class="button button-lite">Processing</a>
+        </div>
+    </div>
+
+    <div class="row" ng-repeat="item in orderDetail.item" style="border-top: 1px solid #999;" ng-click="goToOrder(Orders[$index])" >
+        <a class="item item-icon-right " href="#"  style="border-width: 0px; border-style: none;" >
+            <p style="font-size: 14px;text-align:left;">
+                {{item.itemName}}<br>
+                {{item.itemQty}} x RM {{item.itemPrice}}<br>
+            </p>
+            
+            <div ng-if="Orders[$index].orderStatus === 'pending'">
+                <i style="font-size: 20px; margin-right:0px;right:0px;" class="icon ion-android-more-horizontal"></i>
+            </div>
+            <div ng-if="Orders[$index].orderStatus === 'processing'">
+                <i style="font-size: 20px; margin-right:0px;right:0px;" class="icon ion-android-checkbox-outline-blank"></i>
+            </div>
+            <div ng-if="Orders[$index].orderStatus === 'ready'">
+                <i style="font-size: 20px; margin-right:0px;right:0px;" class="icon ion-android-checkbox-outline"></i>
+            </div>
+        </a>
+    </div>
+   
+    </ion-content>
+</ion-view>

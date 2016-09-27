@@ -1,19 +1,65 @@
 <ion-view style="" class=" " id="page17" title= {{category_name}}>
-    <ion-content class="has-header" padding="true" ng-init="loadCategoryAndMenu()">
+    <ion-content class="has-header" padding="true">
+
+        <div style="padding:15px;">
+            <a style="min-width: 100%;border-radius: 0px;" ng-click="addNewItem()"  class="button button-lite">
+                Add New Item
+            </a>
+        </div>
 
         <div ng-repeat="item in menu" >
            
+            <!-- Load up the menu item in this category -->
             <div ng-if="menu[$index].category === current_category" style="padding:1px;border-top:1px solid #999">
-                <a class="item item-icon-right " href="#"  style="border-width: 0px; border-style: none;" >
-                    <p ng-click="addToCart(menu[$index])" style="font-size: 14px;text-align:left;">
-                        {{menu[$index].name}}
-                        <br>
-                        <p ng-click="addToCart(menu[$index])" style="font-size: 10px;text-align:left;">{{menu[$index].description}}</p>
-                    </p>
-                    <i style="font-size: 16px; margin-right:0px;right:0px;"  ng-click="addToCart(menu[$index])" class="icon ion-ios-plus-outline">RM {{menu[$index].price/100}}</i>
-                </a>
+                <div ng-if="menu[$index].available == true" >
+                    <a class="item item-icon-right " href="#"  style="border-width: 0px; border-style: none;" >
+                        <p ng-click="editItem(menu[$index])" style="font-size: 14px;text-align:left;">
+                            {{menu[$index].name}}<br>
+                            <p ng-click="editItem(menu[$index])" style="font-size: 10px;text-align:left;">{{menu[$index].description}}</p>
+                        </p>
+                        <i style="font-size: 16px; margin-right:0px;right:0px;"  ng-click="editItem(menu[$index])" class="icon ion-ios-plus-outline">RM {{menu[$index].price/100}}</i>
+                    </a>
+                </div>
+                <!-- unavailable item render in red -->
+                <div ng-if="menu[$index].available != true">
+                    <a class="item item-icon-right " href="#"  style="border-width: 0px; border-style: none;" >
+                        <p ng-click="editItem(menu[$index])" style="font-size: 14px;text-align:left; color: #ff0000">
+                            {{menu[$index].name}}<br>
+                            <p ng-click="editItem(menu[$index])" style="font-size: 10px;text-align:left; color: #ff0000">{{menu[$index].description}}</p>
+                        </p>
+                        <i style="font-size: 16px; margin-right:0px;right:0px;color: #ff0000"  ng-click="editItem(menu[$index])" class="icon ion-ios-plus-outline">RM {{menu[$index].price/100}}</i>
+                    </a>
+                </div>
             </div>
 
+            <!-- Check if this is sub-menu -->
+            <div ng-if="menu[$index].subcategory == true && menu[$index].category === current_category">
+                <div ng-repeat="subItem in menu">
+                    <div ng-if="menu[$parent.$index].$id === menu[$index].category" style="border-top:1px solid #999">
+                        <div ng-if="menu[$index].available == true" >
+                            <!-- This is our submenu -->
+                            <a class="item item-icon-right " href="#"  style="border-width: 0px; border-style: none;" >
+                                <p ng-click="editItem(menu[$index])" style="font-size: 14px;text-align:left;">
+                                    > > > {{menu[$index].name}}
+                                    <p ng-click="editItem(menu[$index])" style="font-size: 10px;text-align:left;">{{menu[$index].description}}</p>
+                                </p>
+                                <i style="font-size: 16px; margin-right:0px;right:0px;"  ng-click="editItem(menu[$index])" class="icon ion-ios-plus-outline">RM {{menu[$index].price/100}}</i>
+                            </a>
+                        </div>
+                        <div ng-if="menu[$index].available != true" >
+                            <!-- This is our submenu -->
+                            <a class="item item-icon-right " href="#"  style="border-width: 0px; border-style: none;" >
+                                <p ng-click="editItem(menu[$index])" style="font-size: 14px;text-align:left;color: #ff0000">
+                                    > > > {{menu[$index].name}}
+                                    <p ng-click="editItem(menu[$index])" style="font-size: 10px;text-align:left;">{{menu[$index].description}}</p>
+                                </p>
+                                <i style="font-size: 16px; margin-right:0px;right:0px;left;color: #ff0000"  ng-click="editItem(menu[$index])" class="icon ion-ios-plus-outline">RM {{menu[$index].price/100}}</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </ion-content>
 </ion-view>

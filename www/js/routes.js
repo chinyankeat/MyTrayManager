@@ -60,22 +60,28 @@ angular.module('app.routes', [])
     controller: 'manageItemCtrl'
   })
 
-  .state('settings', {
+  .state('editItem', {
+    url: '/page11',
+    templateUrl: 'templates/editItem.html',
+    controller: 'editItemCtrl'
+  })
+
+  .state('addItem', {
     url: '/page12',
+    templateUrl: 'templates/addItem.html',
+    controller: 'addItemCtrl'
+  })
+
+  .state('settings', {
+    url: '/page13',
     templateUrl: 'templates/settings.html',
     controller: 'settingsCtrl'
   })
 
   .state('support', {
-    url: '/page13',
+    url: '/page14',
     templateUrl: 'templates/support.html',
     controller: 'supportCtrl'
-  })
-
-  .state('checkout', {
-    url: '/page16',
-    templateUrl: 'templates/checkout.html',
-    controller: 'checkoutCtrl'
   })
 
   .state('tabsController.forgotPassword', {
